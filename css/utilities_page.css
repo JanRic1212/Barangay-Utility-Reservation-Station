@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e252f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #2a323d;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.version {
+    font-size: 14px;
+    background-color: #3a4655;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #3a4655;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #3a4655;
+    min-width: 120px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #4a5665;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+main {
+    width: 90%;
+    max-width: 400px;
+}
+
+section {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.construction {
+    background-color: #f7e8a4;
+    color: #000;
+}
+
+.medical {
+    background-color: #a4e8e0;
+    color: #000;
+}
+
+.sports {
+    background-color: #e8a4a4;
+    color: #000;
+}
+
+.events {
+    background-color: #d4a4e8;
+    color: #000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.grid img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.grid img:hover {
+    border: 2px solid #000;
+}
